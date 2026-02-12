@@ -1,0 +1,136 @@
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animate pulse */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+.animate-pulse {
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+}
+
+/* Background layers */
+.bg-layer-dark {
+  background-color: #0a0a0a;
+  z-index: 0;
+}
+
+.bg-layer-grid {
+  background-image:
+    linear-gradient(rgba(38, 38, 38, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(38, 38, 38, 0.5) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: 1;
+}
+
+.bg-layer-blur {
+  opacity: 0.3;
+  z-index: 2;
+  position: relative;
+}
+
+.blur-shape-orange {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 18rem;
+  height: 18rem;
+  background-color: rgba(251, 191, 36, 0.2);
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.blur-shape-yellow {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  width: 24rem;
+  height: 24rem;
+  background-color: rgba(253, 230, 138, 0.1);
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+/* Section header gradient bars */
+.gradient-bar-orange-to-yellow {
+  width: 6px;
+  height: 3rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom, #f59e0b, #fbbf24);
+}
+.gradient-bar-yellow-to-orange {
+  width: 6px;
+  height: 3rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom, #fbbf24, #f59e0b);
+}
+
+/* Value card */
+.value-card {
+  background-color: #161616;
+  border: 1px solid #262626;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+/* Gradient overlay on hover */
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.value-card:hover .gradient-overlay {
+  opacity: 0.1;
+}
+
+/* Specific overlay gradients */
+.overlay-orange-yellow {
+  background: linear-gradient(to bottom right, #f59e0b, #fbbf24);
+}
+
+.overlay-orange {
+  background: linear-gradient(to bottom right, #f97316, #f59e0b);
+}
+
+/* Ensure text and icons stay above overlay */
+.value-card > .position-relative {
+  position: relative;
+  z-index: 1;
+}
