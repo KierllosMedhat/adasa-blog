@@ -1,0 +1,81 @@
+/* Navbar background */
+.custom-navbar {
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(15px);
+  transition: all 0.5s ease;
+  border-color: #262626 !important;
+}
+
+/* Logo */
+.logo-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.logo-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.brand-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffffff, #d4d4d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-subtitle {
+  font-size: 0.75rem;
+  color: rgba(255, 140, 0, 0.8);
+  letter-spacing: 1px;
+}
+
+/* Nav pill container */
+.nav-pill-container {
+  background: #161616;
+  padding: 6px;
+  border-radius: 50px;
+  border: 1px solid #262626;
+}
+
+/* Nav links */
+.nav-pill-container .nav-link {
+  color: #a3a3a3;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-pill-container .nav-link:hover {
+  color: white;
+}
+
+.nav-pill-container .nav-link.active {
+  background: linear-gradient(to right, #f97316, #ea580c);
+  color: white;
+}
+
+.bg-active {
+  background: linear-gradient(to right, #f97316, #ea580c) !important;
+  color: white !important;
+}
+
+/* Icon button */
+.btn-icon {
+  background: transparent;
+  color: #a3a3a3;
+  border-radius: 12px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.btn-icon:hover {
+  background: #161616;
+  color: #f97316;
+  border: 1px solid #262626;
+}

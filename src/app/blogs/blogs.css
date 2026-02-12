@@ -1,0 +1,59 @@
+body {
+  background: #0a0a0a;
+  color: #e5e5e5;
+}
+
+.bg-dark-main {
+  background: #0a0a0a;
+}
+.bg-card-dark {
+  background: #161616;
+}
+.border-dark-custom {
+  border: 1px solid #262626 !important;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #f97316, #ea580c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-orange {
+  background: linear-gradient(to right, #f97316, #ea580c);
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  opacity: 0.9;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(38, 38, 38, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(38, 38, 38, 0.5) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.blur-circle {
+  filter: blur(120px);
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+}
+
+.input-dark {
+  background: #161616;
+  border: 1px solid #262626;
+  color: white;
+}
+
+.input-dark:focus {
+  background: #161616;
+  color: white;
+  border-color: #f97316;
+  box-shadow: none;
+}

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { FaIconComponent, FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
   selector: 'app-navbar',
-  imports: [FaIconComponent, FontAwesomeModule],
+  imports: [FontAwesomeModule, RouterLink, RouterLinkActive],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
